@@ -2,7 +2,7 @@
 MongoDB Database Backup Script with x509 Authentication
 
 
-You can customize this Script this script based on your requirement . If you want to Trigger this Daily Backup with Basic Mongodb Authentication
+You can customize this Script based on your requirement . If you want to Trigger this Daily Backup with Basic Mongodb Authentication
 Just Ignore the PEMKEY & CA parameters and make the changes in the AUTH_PARAM 
 
 For Example :-
@@ -11,7 +11,7 @@ if [ ${AUTH_ENABLED} -eq 1 ]; then
  AUTH_PARAM=" --username ${MONGO_USER} --password ${MONGO_PASSWD}"
 fi
 
-This will help to Enable Daily Backup without SSL Enables.
+This will help to Enable Daily Backup without SSL Enabled.
 
 Also, you can Alter your Retention Period on:
 
